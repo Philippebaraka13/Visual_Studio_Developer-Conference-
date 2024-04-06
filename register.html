@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <title>Registration Form</title>
+   <link href="mix.css" rel="stylesheet" />
+   <link href="mix_styles.css" rel="stylesheet" />
+   <script src="register.js" async></script>
+</head>
+
+<body>
+   <header>
+      <img src="mix.png" alt="Microsoft" id="logoimg" />
+      <nav class="horizontal">
+          <ul>
+              <li><a href="#">Memberships</a></li>
+              <li><a href="#">Conferences</a></li>
+
+              &nbsp
+              &nbsp
+              &nbsp
+              &nbsp
+              &nbsp
+              &nbsp
+              <li><a href="#">Login</a></li>
+          </ul>
+      </nav>
+   </header>
+
+   <article>
+      <h1>Annual Conference</h1>
+      <p> May 23-25, 2024
+      <br>VSLive! Developer Conference has been training developers,
+       software architects, engineers, and designers like you since 1993.
+       As we celebrate our 30th Anniversary, we return to the Tech Mecca,
+       Microsoft Headquarters in Redmond, WA for five days of in-depth training,
+       networking, and fun! Sharpen your skills in Microsoft Visual Studio 2022,
+       .NET 7, DevOps, MAUI, JavaScript, TypeScript, Angular, Blazor, and modern
+       data processing techniques. Our speakers will answer your questions with
+       practical guidance on native client development, web, database,
+       and so much more. Explore everything Microsoft HQ and the Pacific
+       Northwest have to offer and further your education at the same time!</br>
+   </article>
+
+   <section id="section1">
+      <form id="regForm" name="regForm" method="post" action="result.html">
+      <h1>VSLive Registration Form</h1>
+
+
+      <fieldset id="contactInfo">
+          <label for="fnBox">First Name*</label>
+          <input name="firstName" id="fnBox" type="text" required />
+
+          <label for="lnBox">Last Name*</label>
+          <input name="lastName" id="lnBox" type="text" required />
+
+          <label for="groupBox">Company</label>
+          <input name="group" id="groupBox" type="text" />
+
+          <label for="groupBox">Job Title</label>
+          <input name="job" id="jobBox" type="text" />
+
+          <label for="mailBox">E-mail*</label>
+          <input name="email" id="mailBox" type="email" required />
+
+          <label for="phoneBox">Work Phone*</label>
+          <input name="phoneNumber" id="phoneBox" type="tel" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$"
+                 required placeholder="(nnn) nnn-nnnn" />
+      </fieldset>
+
+         <fieldset id="confChoices">
+            <label for="sessionBox">Session Packs</label>
+            <select id="sessionBox" name="sessionOption" size="5" required>
+               <option value="95">Exhibits Only ($95.00)</option>
+               <option value="100">3 Session Pack ($100.00)</option>
+               <option value="200">6 Session Pack ($200.00)</option>
+               <option value="400">Session Pass ($400.00)</option>
+               <option value="700">VIP Pass ($700.00)</option>
+            </select>
+            <label for="banquet">VSLive Banquet ($70 ea.)</label>
+            <input type="number" min="0" max="10" id="banquetBox" name="banquetGuests" /><span> attendees</span>
+
+            <label for="mediaPack">VSLive Media Pack ($120)</label>
+            <input type="checkbox" name="mediaPack" id="mediaCB" value="120" />
+
+         </fieldset>
+         <input id="regSubmit" type="submit" value="continue" />
+      </form>
+   </section>
+
+   <aside id="reg1Aside">
+      <table>
+         <caption>Shopping Cart</caption>
+         <tr><th>Name</th><td><span id="regName"></span></td></tr>
+         <tr><th>Company</th><td><span id="regGroup"></span></td></tr>
+
+         <tr><th>Session</th><td><span id="regSession"></span></td></tr>
+         <tr><th>Banquet Guests </th><td><span id="regBanquet"></span></td></tr>
+         <tr><th>Media Pack </th><td><span id="regPack"></span></td></tr>
+         <tr><th>TOTAL</th><td><span id="regTotal"></span></td></tr>
+      </table>
+   </aside>
+
+
+
+
+   <nav id="columns">
+      <ul>
+
+         <li><a href="#">general session</a></li>
+         <li><a href="#">exhibits</a></li>
+         <li><a href="#">programs</a></li>
+         <li><a href="#">workshops</a></li>
+         <li><a href="#">committees</a></li>
+         <li><a href="#">panel discussion</a></li>
+         <li><a href="#">demonstrations</a></li>
+         <li><a href="#">travel info</a></li>
+         <li><a href="#">accommodations</a></li>
+
+      </ul>
+   </nav>
+
+   <footer>
+      Microsoft &copy; 2024 All Rights Reserved
+   </footer>
+
+</body>
+</html>

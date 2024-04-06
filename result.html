@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Result Form</title>
+    <link href="mix.css" rel="stylesheet" />
+    <link href="mix_styles.css" rel="stylesheet" />
+    <script src="result.js" async></script>
+</head>
+
+<body>
+    <header>
+        <img src="mix.png" alt="Microsoft" id="logoimg" />
+        <nav class="horizontal">
+            <ul>
+                <li><a href="#">Memberships</a></li>
+                <li><a href="#">Conferences</a></li>
+
+                &nbsp
+                &nbsp
+                &nbsp
+                &nbsp
+                &nbsp
+                &nbsp
+                <li><a href="#">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="section1">
+    <form id="regForm" name="regForm" method="post" action="login.html">
+        <aside id="reg2Aside">
+            <table>
+                <caption>Registration Information</caption>
+                <tr>
+                    <th>Name</th>
+                    <td><span id="regName"></span></td>
+                </tr>
+                <tr>
+                    <th>Company</th>
+                    <td><span id="regGroup"></span></td>
+                </tr>
+
+                <tr>
+                    <th>Session</th>
+                    <td><span id="regSession"></span></td>
+                </tr>
+                <tr>
+                    <th>Banquet Guest ($70 ea.)</th>
+                    <td><span id="regBanquet"></span></td>
+                </tr>
+                <tr>
+                    <th>Media Pack ($120)</th>
+                    <td><span id="regPack"></span></td>
+                </tr>
+                <tr>
+                    <th>TOTAL</th>
+                    <td><span id="regTotal"></span></td>
+                </tr>
+            </table>
+        </aside>
+        <input id="regSubmit" type="submit" value="continue" />
+    </form>
+
+    </section>
+
+    <nav id="columns">
+        <ul>
+
+            <li><a href="#">general session</a></li>
+            <li><a href="#">exhibits</a></li>
+            <li><a href="#">programs</a></li>
+            <li><a href="#">workshops</a></li>
+            <li><a href="#">committees</a></li>
+            <li><a href="#">panel discussion</a></li>
+            <li><a href="#">demonstrations</a></li>
+            <li><a href="#">travel info</a></li>
+            <li><a href="#">accommodations</a></li>
+
+        </ul>
+    </nav>
+
+    <footer>
+        Microsoft &copy; 2024 All Rights Reserved
+    </footer>
+
+</body>
+</html>
