@@ -1,4 +1,6 @@
 # Visual_Studio_Developer-Conference-
+#Microsoft manages the promotion for the Visual Studio Developer Conference annual conference - a popular conference for people who develop applications and technology. 
+
 <img width="316" alt="image" src="https://github.com/Philippebaraka13/Visual_Studio_Developer-Conference-/assets/97373052/04827199-9ed7-446d-8cc5-084b3b467bf2">
 <img width="397" alt="image" src="https://github.com/Philippebaraka13/Visual_Studio_Developer-Conference-/assets/97373052/e8545a78-7cfc-479b-9063-2085348b568b">
 <img width="324" alt="image" src="https://github.com/Philippebaraka13/Visual_Studio_Developer-Conference-/assets/97373052/ff9bbefd-2937-42c3-9985-40c098a3bc12">
